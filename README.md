@@ -1,3 +1,3 @@
-# HTTP NOSTR UTXO 
+# HTTP Nostr UTXO 
 
 HTTP Privacy integration concept code with Nostr, UTXO and many more
