@@ -1,5 +1,5 @@
-
 ## Privacy-First AI Service Marketplace
+
 A decentralized platform for privacy-preserving AI services, combining HTTP privacy APIs (from AI-Robotic-Labs/http-privacy), Nostr for secure communication, and Bitcoin UTXOs for private payments. Users can access AI models (e.g., Grok, Stable Diffusion) anonymously, communicate with providers via Nostr, and pay using Bitcoin with privacy techniques like CoinJoin.
 
 **Status: Proof-of-concept (PoC). The http-privacy project is in beta, so use with caution.**
@@ -32,27 +32,27 @@ Future-Ready: Planned support for Lightning Network and additional AI models (e.
 
 ## Workflow:
 
-A user browses AI service listings on Nostr relays via a Tor browser.
-They send an encrypted Nostr message to a provider with a query (e.g., "Generate a summary").
-The provider responds with a Bitcoin address and price (e.g., 0.001 BTC).
-The user sends a CoinJoin-mixed payment and queries the AI API via http-privacy.
-The provider delivers the result (e.g., generated text) via Nostr.
+- A user browses AI service listings on Nostr relays via a Tor browser.
+- They send an encrypted Nostr message to a provider with a query (e.g., "Generate a summary").
+- The provider responds with a Bitcoin address and price (e.g., 0.001 BTC).
+- The user sends a CoinJoin-mixed payment and queries the AI API via http-privacy.
+- The provider delivers the result (e.g., generated text) via Nostr.
 
 ## Installation
-Prerequisites
+### Prerequisites
 
-Python 3.8+
-A running SOCKS5 proxy (e.g., Tor at 127.0.0.1:9050 or http-privacy’s proxy, once available).
-A Bitcoin wallet supporting CoinJoin (e.g., Wasabi Wallet, not yet integrated).
-Nostr keypair for user and provider.
+- Python 3.8+
+- A running SOCKS5 proxy (e.g., Tor at 127.0.0.1:9050 or http-privacy’s proxy, once available).
+- A Bitcoin wallet supporting CoinJoin (e.g., Wasabi Wallet, not yet integrated).
+- Nostr keypair for user and provider.
 
 ## Setup
 
-Clone the Repository:git clone https://github.com/your-username/privacy-ai-marketplace.git
+Clone the Repository:git clone https://github.com/AI-Robotic-Labs/http-nostr-utxo.git
 cd privacy-ai-marketplace
 
 
-Install Dependencies:pip install requests pysocks nostr
+## Install Dependencies:pip install requests pysocks nostr
 
 
 Configure the Client:
@@ -65,14 +65,13 @@ PROVIDER_PUBKEY: The AI provider’s Nostr public key.
 
 
 
-
+´´´python
 Run the Client:python ai_privacy_client.py
+``
 
+## Usage
 
-
-Usage
-
-Ensure your SOCKS5 proxy is running.
+- Ensure your SOCKS5 proxy is running.
 Run the client to:
 Send a Nostr request to an AI provider (e.g., for text generation).
 Receive a Bitcoin address and price via Nostr.
@@ -80,7 +79,7 @@ Simulate a Bitcoin payment (UTXO-based, placeholder).
 Query the AI API via http-privacy and display the result.
 
 
-Check console output for the AI response or errors.
+- Check console output for the AI response or errors.
 
 Example:
 $ python ai_privacy_client.py
@@ -89,35 +88,19 @@ Received provider response: {"bitcoin_address": "bc1...", "price_btc": 0.001}
 Initiating payment of 0.001 BTC to bc1...
 AI Result: Decentralized systems enhance privacy by...
 
-Roadmap
+## Roadmap
 
-Bitcoin Integration: Add full Bitcoin wallet support (e.g., bitcoinlib or Wasabi) for UTXO payments with CoinJoin.
-Lightning Network: Enable fast, low-cost payments via Lightning, using Nostr for invoice exchange.
-http-privacy Updates: Incorporate new AI model bindings (e.g., Claude, Llama) and the MCP server from the http-privacy roadmap.
-GUI Client: Develop a user-friendly interface (e.g., with tkinter or web-based).
-Reputation System: Use Nostr events for decentralized provider ratings.
-Monero Support: Add Monero for stronger payment privacy.
+- Bitcoin Integration: Add full Bitcoin wallet support (e.g., bitcoinlib or Wasabi) for UTXO payments with CoinJoin.
+- Lightning Network: Enable fast, low-cost payments via Lightning, using Nostr for invoice exchange.
+- http-privacy Updates: Incorporate new AI model bindings (e.g., Claude, Llama) and the MCP server from the http-privacy roadmap.
+- GUI Client: Develop a user-friendly interface (e.g., with tkinter or web-based).
+- Reputation System: Use Nostr events for decentralized provider ratings.
+- Monero Support: Add Monero for stronger payment privacy.
 
-Limitations
+## Limitations
 
-Beta Dependency: The http-privacy project is in beta, so API bindings and SOCKS5 proxy may be unstable.
-Placeholder Payment: Bitcoin payment logic is simulated; real wallet integration is pending.
-Nostr Relay Trust: Relays could log metadata. Use multiple relays or run your own for privacy.
-Complexity: Users must manage Nostr keys and Bitcoin wallets manually.
+- Beta Dependency: The http-privacy project is in beta, so API bindings and SOCKS5 proxy may be unstable.
+- Placeholder Payment: Bitcoin payment logic is simulated; real wallet integration is pending.
+- Nostr Relay Trust: Relays could log metadata. Use multiple relays or run your own for privacy.
+- Complexity: Users must manage Nostr keys and Bitcoin wallets manually.
 
-Contributing
-Contributions are welcome! Please:
-
-Fork the repository.
-Create a feature branch (git checkout -b feature/your-feature).
-Commit changes (git commit -m "Add feature").
-Push to the branch (git push origin feature/your-feature).
-Open a pull request.
-
-License
-MIT License. See LICENSE for details.
-Acknowledgments
-
-AI-Robotic-Labs/http-privacy for privacy-focused AI APIs.
-Nostr Protocol for decentralized communication.
-Bitcoin community for UTXO and privacy innovations.
