@@ -48,8 +48,8 @@ Future-Ready: Planned support for Lightning Network and additional AI models (e.
 
 ## Setup
 
-Clone the Repository:git clone https://github.com/AI-Robotic-Labs/http-nostr-utxo.git
-cd privacy-ai-marketplace
+*Clone the Repository:git clone https://github.com/AI-Robotic-Labs/http-nostr-utxo.git
+cd privacy-ai-marketplace*
 
 
 ## Install Dependencies:pip install requests pysocks nostr
@@ -67,7 +67,6 @@ PROVIDER_PUBKEY: The AI provider’s Nostr public key.
 
 ´´´python
 Run the Client:python ai_privacy_client.py
-``
 
 ## Usage
 
