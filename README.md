@@ -66,7 +66,9 @@ PROVIDER_PUBKEY: The AI provider’s Nostr public key.
 
 
 ´´´python
+
 Run the Client:python ai_privacy_client.py
+``
 
 ## Usage
 
