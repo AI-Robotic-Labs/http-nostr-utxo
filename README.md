@@ -105,5 +105,3 @@ AI Result: Decentralized systems enhance privacy by...
 - **Placeholder Payment**: Bitcoin payment logic is simulated; real wallet integration is pending.
 - **Nostr Relay Trust**: Relays could log metadata. Use multiple relays or run your own for privacy.
 - **Complexity**: Users must manage Nostr keys and Bitcoin wallets manually.
-
----
