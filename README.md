@@ -49,7 +49,7 @@ The platform integrates three layers:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/AI-Robotic-Labs/privacy-ai-marketplace.git
+   git clone https://github.com/AI-Robotic-Labs/http-nostr-utxo.git
    cd privacy-ai-marketplace
    ```
 
