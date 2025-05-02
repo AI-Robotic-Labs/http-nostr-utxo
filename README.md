@@ -1,4 +1,4 @@
-# Privacy-First AI Service Marketplace 🤖
+# Privacy-First AI Service Marketplace 🤖🪙
 
 A decentralized platform for privacy-preserving AI services, integrating HTTP privacy APIs (from [AI-Robotic-Labs/http-privacy](https://github.com/AI-Robotic-Labs/http-privacy)), Nostr for secure communication, and Bitcoin UTXOs for private payments. Users can access AI models (e.g., Grok, Stable Diffusion) anonymously, communicate with providers via Nostr, and pay using Bitcoin with privacy techniques like CoinJoin.
 
